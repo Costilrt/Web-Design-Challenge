@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/8502dc2626.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Urbanist">
+    <title>Latitude: Wind Speed</title>
+</head>
+<body class="plot-pages">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                
+                <div class="dropdown show">
+                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="nav-link"><i class="fas fa-chart-bar"></i>  Plots  <i class="fas fa-caret-down"></i></span>
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="temp_plot.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity_plot.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness_plot.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind_speed_plot.html">Wind Speed</a>
+                    </div>
+                  </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparisons.html"><i class="fas fa-columns"></i>  Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html"><i class="fas fa-table"></i>  Data</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left-block">
+            <h1>Wind Speed</h1>
+            <hr>
+            <img src="Resources/assets/images/Fig4.png" alt="City Latitude vs Wind Speed Scatter Plot">
+            <section>
+                <p>Based on the chart, there isn't an obvious trend between latitude and wind speed. Interestingly, the vast majority of wind speed measurements are below 10 mph across the globe. Very few places fall above 10 mph at the time the data was collected. Another interesting note is that there are eight or more places in the northern hemisphere above 25 mph, while there are none above 25 mph in the southern hemisphere. This could be evidence of a meteorological event taking place in the northern hemisphere at the time, but further research would be needed to confirm. </p>
+            </section>
+        </div>
+        <div class="right-block">
+            <h1>Visualizations</h1>
+            <hr>
+            <div class="viz-table">
+                <a href="temp_plot.html"><img src="Resources/assets/images/Fig1.png" alt="City Latitude vs Max Temperature Scatter Plot"></a>
+                <a href="humidity_plot.html"><img src="Resources/assets/images/Fig2.png" alt="City Latitude vs Humidity Scatter Plot"></a>
+                <a href="cloudiness_plot.html"><img src="Resources/assets/images/Fig3.png" alt="City Latitude vs Cloudiness Scatter Plot"></a>
+                <a class="active-plot" href="wind_speed_plot.html"><img src="Resources/assets/images/Fig4.png" alt="City Latitude vs Wind Speed Scatter Plot"></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
